@@ -534,26 +534,7 @@ color: #b1d52c;
 #page4 h4{
   font-family: "Arial", sans-serif;
 }
-span{
-  background-color: #B7E219;
-  color: #4a90e2;
-}
-/* Width of the scrollbar */
-/* For WebKit browsers */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+#page4 span{ 
+ background-color: #B7E219;
+ color: #4a90e2;
 }
