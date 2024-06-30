@@ -1,0 +1,11 @@
+/* Webfont: WanoQuin-ExtraLight */@font-face {
+    font-family: 'QyranoFamExtLt';
+    src: url('WanoQuin-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('WanoQuin-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('WanoQuin-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('WanoQuin-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

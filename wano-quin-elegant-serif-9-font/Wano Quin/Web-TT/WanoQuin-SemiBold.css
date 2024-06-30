@@ -1,0 +1,11 @@
+/* Webfont: WanoQuin-SemiBold */@font-face {
+    font-family: 'QyranoFamSemBd';
+    src: url('WanoQuin-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('WanoQuin-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('WanoQuin-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('WanoQuin-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

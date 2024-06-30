@@ -1,0 +1,11 @@
+/* Webfont: WanoQuin-Thin */@font-face {
+    font-family: 'QyranoFamThin';
+    src: url('WanoQuin-Thin.eot'); /* IE9 Compat Modes */
+    src: url('WanoQuin-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('WanoQuin-Thin.woff') format('woff'), /* Modern Browsers */
+         url('WanoQuin-Thin.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
