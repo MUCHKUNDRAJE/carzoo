@@ -95,6 +95,9 @@ nav h1::after{
   bottom: 0%; 
   transition: all ease 0.3s;
 }
+#page3 h2{
+  display: none;
+}
 nav h1:hover::after{
   content: " ";
   width: 100%;
@@ -915,8 +918,10 @@ nav i{
   display: none;
 }
 
-@media(max-width:700px){
-
+@media(max-width:600px){
+#main{
+  overflow: hidden;
+}
 
   #nav{
     width:150px;
@@ -940,31 +945,100 @@ nav i{
 
 #page1{
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 #page1 h1{
-  font-size: 15vw;
+  font-size: 15.5vw;
   margin-left: 20px;
 }
 #page1 h2{
   
   margin-left: 20px;
 }
-#div22{
+#div22 {
   margin-top: 30px;
+  
 }
 
+#div22 #div{
+  width: 80px;
+  height: 80px;
+ 
+}
+#div22 #div2{
+  width: 60px;
+  height: 60px;
+ 
+}
 #page1 h3{
-  font-size: 80px;
-  margin-left: 20px;
+  font-size: 69px;
   margin-bottom: 10px;
 }
 
 #scroll1{
-
   white-space: nowrap;
-
 }
+
+#card1{
+  rotate: 0deg;
+  top:8%
+}
+#card1 p{
+  text-align: center;
+}
+#card1 h1{
+  text-align: center;
+}
+.card {
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+  border: 8px solid #000;
+  box-shadow: 15px 15px 0 #000;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-left: 1%;
+  margin-top: 70%;
+}
+#page2{
+  height: 140vh;
+}
+#page3 #dada{
+  display: block;
+  font-size: 450px;
+  white-space: nowrap;
+  /* overflow: auto; */
+  text-transform: uppercase;
+  color: #b1d52c;
+  }
+  #page3 #dadi{
+ display: none;
+}
+.slide:nth-child(1)
+{
+    left:30%;
+    top:60%;
+}
+.slide:nth-child(2)
+{
+    left:160%;
+    top:5%;
+}
+.slide:nth-child(3)
+{
+    left:300%;
+    top:50%;
+}
+.slide:nth-child(4)
+{
+    left:470%;
+    top:15%;
+}
+
+
+
 
 
 
