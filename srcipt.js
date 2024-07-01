@@ -105,9 +105,16 @@ menubutton.addEventListener("click",function(){
 })
 
 var tl = gsap.timeline();
+tl.to("#loder",{
+   opacity : 0,
+   delay:1,
+})
+tl.to("#loder",{
+   display:"none"
+ },"anim")
 tl.from("nav",{
     opacity:0,
-  })
+  },"anim")
 tl.from("#page1 h1",{
     x:50,
     opacity:0,
@@ -116,16 +123,28 @@ tl.from("#page1 h2",{
     x:-50,
     opacity:0,
 })
+tl.to("#div22",{
+    x:700,
+    duration:0.3,
+    ease:"power2"
+   
+})
 
 
-gsap.registerPlugin(Draggable);
-Draggable.create(div22);
+var boll=document.querySelector("#circle");
+var main=document.querySelector("#main");
+var nav =document.querySelector("nav");
 
-
-var div22 = document.querySelector("#div22");
-
-div22.addEventListener("drag", function() {
-    gsap.to(div22, {
-        x: 10,
-    });
-});
+main.addEventListener("mousemove",function(dets){
+  gsap.to(boll, {
+    x : dets.x,
+    y :dets.y,
+  })
+})
+nav.addEventListener("mousemove",function(dets){
+    gsap.to(boll, {
+      x : dets.x,
+      y :dets.y,
+    })
+  })
+  

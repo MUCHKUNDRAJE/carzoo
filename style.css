@@ -788,7 +788,7 @@ ul {
   text-decoration: none;
 }
 
-#footer1{
+#footer1-3{
   text-align: center;
   margin-top: 70px;
 }
@@ -891,6 +891,7 @@ menu{
 
 #menu nav h1{
  font-family: rejoy;
+ z-index: 999999999;
 
 }.text:hover h1{
   transform: translateY(-100%);
@@ -920,6 +921,71 @@ menu{
 nav i{
   display: none;
 }
+
+#circle{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #800000;
+  z-index: 1000000;
+  transition: background-image ease 0.5s;
+
+  background-position: center;
+  background-size:cover ;
+ 
+  /* mix-blend-mode: difference; */
+   transition: left lnear 0.1s top linear;
+   
+}
+
+#loder{
+  height: 100%;
+  background-color: cornsilk;
+  width: 100%;
+  position: fixed;
+  z-index: 999999999;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+#laoder h1{
+  z-index: 999999999;
+  position: absolute;
+  top:80%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.progress {
+  background-color: #ffffff;
+  width: 660px;
+  height: 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border:3px dashed #000;
+
+}
+
+.inner {
+  background-image: linear-gradient(to left, #00cdac, #00c2c9, #00b4e3, #00a2f1, #008cef, #0088eb, #0085e6, #0081e2, #0090de, #009bd2, #00a3c1, #02aab0);
+  height: 100%;
+  transform-origin: left;
+  animation: progress 2s infinite;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(10%) translateX(-10%);
+  }
+
+  100% {
+    transform: scaleX(80%) translateX(150%);
+  }
+}
+
+
+
 
 @media(max-width:600px){
 #main{
@@ -960,18 +1026,33 @@ nav i{
 }
 #div22 {
   margin-top: 30px;
+ margin-left: 10px;
+
   
 }
 
 #div22 #div{
   width: 70px;
   height: 70px;
+  
+  animation: rotate 1s;
+  animation-iteration-count: infinite;
  
 }
 #div22 #div2{
   width: 50px;
   height: 50px;
  
+  animation: rotate 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+   from{
+    rotate: 0deg;
+   }to{
+    rotate: 360deg;
+   }
 }
 #page1 h3{
   font-size: 69px;
@@ -1072,8 +1153,51 @@ nav i{
  margin-left: 30%;
 }
 
+#page5 h1{
+  font-size: 130px;
+}
+#slider2{
+transform: translate(0%);
+}
 
+#footer1-2{
+  width: 300px;
+  height: 200px;
+}#footer1-2 img{
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+#footer-big{
+  padding: 0%;
+}
+#footer2{
+  display: none;
+}
 
+#footer1{
+ margin-top: -50px;
+ margin-left: -20%;
+}
+#footer1-3{
+ display: none;
+}
+#linkers {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: start;
+ gap: -80px;
+ line-height: 30px;
+}
+#linkers a{
+ font-size: 6vw;
+}
+
+.icon-content i{
+  font-size: 10vw;
+  text-decoration: none;
+}
 
 
 
