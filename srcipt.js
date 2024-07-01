@@ -54,3 +54,67 @@ gsap.to("#page3 .slide", {
     }
 });
 
+gsap.to("#page5 #slider1",{
+    x:0,
+      ease: "power1",
+      scrollTrigger: {
+        trigger: "#page5",
+        start: "top top",
+        end: "top -110%",
+        scrub: 2,
+        // markers: true, // Debug markers, remove in production
+        scroller: "#main"
+    }
+
+})
+
+gsap.to("#page5 #slider2",{
+    x:"-100%",
+      ease: "power1",
+      scrollTrigger: {
+        trigger: "#page5",
+        start: "top top",
+        end: "top -110%",
+        scrub: 2,
+        // markers: true, // Debug markers, remove in production
+        scroller: "#main"
+    }
+
+})
+gsap.to("#page5 #slider3",{
+    x:0,
+      ease: "power1",
+      scrollTrigger: {
+        trigger: "#page5",
+        start: "top top",
+        end: "top -110%",
+        scrub: 2,
+        // markers: true, // Debug markers, remove in production
+        scroller: "#main"
+    }
+
+})
+
+var menu=document.querySelector("#menu");
+var menubutton=document.querySelector("nav h1")
+
+menubutton.addEventListener("click",function(){
+    gsap.to(menu,{
+        y:10,
+    })
+})
+
+var tl = gsap.timeline();
+tl.from("nav",{
+    opacity:0,
+  })
+tl.from("#page1 h1",{
+    x:50,
+    opacity:0,
+})
+tl.from("#page1 h2",{
+    x:-50,
+    opacity:0,
+})
+
+
