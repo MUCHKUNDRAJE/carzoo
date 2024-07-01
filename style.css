@@ -126,6 +126,7 @@ nav h1:hover::after{
 #page1 h3{
     animation: shake1 0.5s;
     animation-iteration-count: infinite;
+
 }
 #page2
 {
@@ -908,5 +909,80 @@ menu{
  align-items: center;
  justify-content: space-between;
  gap:30px
+
+}
+nav i{
+  display: none;
+}
+
+@media(max-width:700px){
+
+
+  #nav{
+    width:150px;
+    height: 50px;
+    /* background-color: white;   */
+    padding: 10px 10px;
+    margin-left: 20px;
+  
+}
+nav h1{
+ 
+   display: none;
+}
+nav i{
+  display: block;
+  font-size: 30px;
+  margin-right: 20px;
+  color: #C91054;
+  font-weight: 800;
+}
+
+#page1{
+  width: 100%;
+  height: 90vh;
+}
+#page1 h1{
+  font-size: 15vw;
+  margin-left: 20px;
+}
+#page1 h2{
+  
+  margin-left: 20px;
+}
+#div22{
+  margin-top: 30px;
+}
+
+#page1 h3{
+  font-size: 80px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#scroll1{
+
+  white-space: nowrap;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

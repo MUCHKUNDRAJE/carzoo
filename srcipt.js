@@ -118,3 +118,14 @@ tl.from("#page1 h2",{
 })
 
 
+gsap.registerPlugin(Draggable);
+Draggable.create(div22);
+
+
+var div22 = document.querySelector("#div22");
+
+div22.addEventListener("drag", function() {
+    gsap.to(div22, {
+        x: 10,
+    });
+});
