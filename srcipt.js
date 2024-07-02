@@ -154,7 +154,7 @@ nav.addEventListener("mousemove",function(dets){
  var close = document.querySelector("nav .ri-close-fill");
  var count = 0
 
-
+ close.style.display="none";
 
 
 
