@@ -974,7 +974,7 @@ nav i{
   border-radius: 50%;
   position: fixed;
   background-color: #800000;
-  z-index: 1000000;
+  z-index: 99999;
   transition: background-image ease 0.5s;
 
   background-position: center;
@@ -1060,6 +1060,7 @@ opacity: 0;
 nav h1{
  
    display: none;
+   z-index: 10000000;
 }
 nav i{
   display: block;

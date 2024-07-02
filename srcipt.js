@@ -168,3 +168,46 @@ nav.addEventListener("mousemove",function(dets){
     close.style.display="none";
        menu.style.transform = "translateY(-100%)"
  })
+
+ var about = document.querySelectorAll(".about");
+ var sell = document.querySelectorAll(".sell");
+ var buy = document.querySelectorAll(".buy");
+ var fin = document.querySelectorAll(".fin")
+
+
+
+
+about.forEach(function(val,index){
+    val.addEventListener("click",function(){
+
+        locoScroll.scrollTo("bottom");
+  
+ })
+
+})
+fin.forEach(function(val,index){
+    val.addEventListener("click",function(){
+
+        locoScroll.scrollTo("bottom");
+  
+ })
+
+})
+
+sell.forEach(function(val){
+    val.addEventListener("click",function(){
+
+        locoScroll.scrollTo(700);
+  
+ })
+})
+
+buy.forEach(function(val){
+    val.addEventListener("click",function(){
+
+        locoScroll.scrollTo(3000);
+  
+ })
+})
+
+
