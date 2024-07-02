@@ -95,8 +95,30 @@ nav h1::after{
   bottom: 0%; 
   transition: all ease 0.3s;
 }
+#linkers a::after{
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #C91054;
+  position: absolute;
+  left: 0%;
+  bottom: 0%; 
+  transition: all ease 0.3s;
+}
+#linkers a:hover{
+  transform: scale(1.2);
+}
 #page3 h2{
   display: none;
+}
+#linkers a:hover::after{
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #C91054;
+  position: absolute;
+  left: 0%;
+  bottom: 0%; 
 }
 nav h1:hover::after{
   content: " ";
@@ -146,6 +168,9 @@ nav h1:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: rotate 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 #div2
 {
@@ -153,6 +178,9 @@ nav h1:hover::after{
     height: 70px;
    border: 5px dashed #C91054;
     border-radius: 50%;
+    animation: rotate 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 #bigdiv{
     display: flex;
@@ -231,6 +259,7 @@ nav h1:hover::after{
 
   .card {
     width: 320px;
+    height: 500px;
     padding: 30px;
     background: #fff;
     border: 8px solid #000;
@@ -240,7 +269,7 @@ nav h1:hover::after{
     position: relative;
     overflow: hidden;
     margin-left: 70%;
-    margin-top: 1%;
+    margin-top: 3%;
   }
   .card:active {
     animation: shake 0.5s ease-in-out;
@@ -680,6 +709,10 @@ object-fit: cover;
 #footer2 a{
  text-decoration: none;
 color: #000;
+z-index: 9999999999999;
+transition: all ease 0.5s;
+}#footer2 a:hover{
+    transform: scale(1.1);
 }
 #footer2 i{
   font-size: 0.7vw;
@@ -797,14 +830,12 @@ ul {
   font-size: 1.5vw;
   color: #C91054;
   font-family: IB;
+  transition: all ease 0.5s;
   margin-top: 20px;
+  z-index: 1100000;
 }
 
-menu{
-  width: 100%;
-  background-color: #C91054;
-  height: 80vh;
-}
+
 #menu{
   width: 100%;
   height:79vh;
@@ -964,7 +995,6 @@ nav i{
   overflow: hidden;
   backface-visibility: hidden;
   border:3px dashed #000;
-
 }
 
 .inner {
@@ -984,7 +1014,19 @@ nav i{
   }
 }
 
-
+@keyframes rotate {
+  from{
+   rotate: 0deg;
+  }to{
+   rotate: 360deg;
+  }
+}
+#div22 {
+opacity: 0;
+}
+#div23{
+  display: none;
+}
 
 
 @media(max-width:600px){
@@ -1026,25 +1068,28 @@ nav i{
 }
 #div22 {
   margin-top: 30px;
- margin-left: 10px;
-
-  
+ margin-left: 10px;  
 }
 
-#div22 #div{
-  width: 70px;
-  height: 70px;
+#div23 #div{
+  width: 68px;
+  height: 68px;
   
   animation: rotate 1s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
  
 }
-#div22 #div2{
+#div23 #div2{
   width: 50px;
   height: 50px;
  
   animation: rotate 1s;
   animation-iteration-count: infinite;
+}
+
+#circle{
+  display: none;
 }
 
 @keyframes rotate {
@@ -1199,10 +1244,38 @@ transform: translate(0%);
   text-decoration: none;
 }
 
+#div22{
+  display: none;
+}
 
+#div23{
+ display: block;
+}
 
-
-
+menu{
+  width: 100%;
+  background-color: #C91054;
+  height: 70%;
+  position: absolute;
+  z-index: 999;
+  transition: all ease 0.5s;
+  transform: translateY(-100%);
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: capitalize;
+  
+}
+.ri-close-fill{
+  position: absolute;
+  right: 0%;
+  display: none;
+}
+menu h1{
+ border-bottom: 2px solid #B7E219;
+ color: #b1d52c;
+ margin-top: 20px;
+}
 
 
 

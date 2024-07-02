@@ -125,6 +125,7 @@ tl.from("#page1 h2",{
 })
 tl.to("#div22",{
     x:700,
+    opacity:1,
     duration:0.3,
     ease:"power2"
    
@@ -148,3 +149,22 @@ nav.addEventListener("mousemove",function(dets){
     })
   })
   
+ var menu = document.querySelector("menu");
+ var butn = document.querySelector("nav .ri-menu-line");
+ var close = document.querySelector("nav .ri-close-fill");
+ var count = 0
+
+
+
+
+
+ butn.addEventListener("click",function(){
+    butn.style.display="none";
+      close.style.display="block";
+    menu.style.transform = "translateY(0%)"
+ })
+ close.addEventListener("click",function(){
+    butn.style.display="block";
+    close.style.display="none";
+       menu.style.transform = "translateY(-100%)"
+ })
