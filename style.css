@@ -51,7 +51,9 @@ html,body{
 #main{
   position: relative;
 }
-
+menu{
+  display: none;
+}
 nav{
     background-color: #B7E219;
     width: 100%;
@@ -1264,6 +1266,7 @@ menu{
   padding-left: 20px;
   padding-right: 20px;
   text-transform: capitalize;
+  display: block;
   
 }
 .ri-close-fill{
