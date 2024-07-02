@@ -66,6 +66,10 @@ nav{
 
     z-index: 10000;
 }
+#div22 span{
+  background-color: #C91054;
+  color: #c2d23c;
+}
 
 #nav{
     width:150px;
@@ -588,6 +592,7 @@ color: #b1d52c;
   width: 350px;
   background-color: #296fbb;
   height: 250px;
+  border-radius: 10px;
 }
 #page4 h1{
   font-family: IB;
@@ -608,6 +613,7 @@ color: #b1d52c;
  width: 100%;
  height: 100%;
  object-fit: cover;
+ border-radius: 10px;
 }
 #page4 h4{
   font-family: "Arial", sans-serif;
@@ -1119,7 +1125,8 @@ nav i{
 
 #card1{
   rotate: 0deg;
-  top:8%
+  top:8%;
+  margin-right: 20px;
 }
 #card1 p{
   text-align: center;
@@ -1217,7 +1224,7 @@ transform: translate(0%);
 #footer1-2{
   width: 300px;
   height: 200px;
-  margin-left:60px ;
+  margin-left:30px ;
 }#footer1-2 img{
  height: 100%;
  width: 100%;
